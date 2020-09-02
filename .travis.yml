@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - 12
+
+services: mongodb
+
+before_install:
+  - npm i
+  
+script:
+  - npm test
+
+# This is mainly to test if the code will run without error/build, not necessarily to test 
